@@ -9,7 +9,8 @@ export script_date="[2020-12-22]"
 export util_source="https://www.mrchromebox.tech/files/util/"
 export rwlegacy_source="https://www.mrchromebox.tech/files/firmware/rw_legacy/"
 export bootstub_source="https://www.mrchromebox.tech/files/firmware/boot_stub/"
-export fullrom_source="https://www.mrchromebox.tech/files/firmware/full_rom/"
+export mcb_fullrom_source="https://www.mrchromebox.tech/files/firmware/full_rom/"
+export tu_fullrom_source="https://raw.githubusercontent.com/ThatsUseful/MrChromeboxScripts/master/roms/"
 export shellball_source="https://www.mrchromebox.tech/files/firmware/shellball/"
 export cbfs_source="https://www.mrchromebox.tech/files/firmware/cbfs/"
 export other_source="https://www.mrchromebox.tech/files/firmware/other/"
@@ -28,6 +29,9 @@ export LE_version_latest="9.2.6"
 export syslinux_version="syslinux-6.04-pre1"
 
 #UEFI Full ROMs
+#GeminiLake
+export coreboot_uefi_casta="coreboot_tiano-casta-thatsuseful_20210111.rom"
+
 #SNB/IVB
 export coreboot_uefi_butterfly="coreboot_tiano-butterfly-mrchromebox_20200604.rom"
 export coreboot_uefi_lumpy="coreboot_tiano-lumpy-mrchromebox_20200604.rom"

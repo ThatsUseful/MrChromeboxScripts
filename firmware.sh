@@ -236,16 +236,20 @@ OS; ${currOS} will no longer be bootable. See https://mrchromebox.tech/#faq"
 fi
 
 #determine correct file / URL
-firmware_source=${fullrom_source}
+firmware_source=${mcb_fullrom_source}
 if [[ "$hasUEFIoption" = true || "$hasLegacyOption" = true ]]; then
     if [ "$useUEFI" = true ]; then
         eval coreboot_file=$`echo "coreboot_uefi_${device}"`
+        if [[ "$coreboot_file" == *"thatsuseful"* ]]; then
+            firmware_source=${tu_fullrom_source}
+        fi
     else
         eval coreboot_file=$`echo "coreboot_${device}"`
     fi
 else
     exit_red "Unknown or unsupported device (${device^^}); cannot continue."; return 1
 fi
+echo_yellow "\nFull ROM firmware path\n(${firmware_source}${coreboot_file})"
 
 #peppy special case
 if [ "$device" = "peppy" ]; then
