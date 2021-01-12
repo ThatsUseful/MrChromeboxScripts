@@ -807,8 +807,8 @@ if [ $? -ne 0 ]; then
     return 1
 fi
 sync
-#umount /tmp/usb > /dev/null 2>&1
-#rmdir /tmp/usb
+umount /tmp/usb > /dev/null 2>&1
+rmdir /tmp/usb
 echo_green "Firmware backup complete. Remove the USB stick and press [Enter] to continue."
 read -ep ""
 }
