@@ -62,6 +62,7 @@ baytrail=('banjo' 'candy' 'clapper' 'enguarde' 'glimmer' 'gnawty' 'heli' \
 braswell=('banon' 'celes' 'cyan' 'edgar' 'kefka' 'reks' 'relm' \
     'setzer' 'terra' 'ultima' 'wizpig')
 skylake=('asuka' 'caroline' 'cave' 'chell' 'lars' 'lili' 'sentry')
+geminilake=('casta')
 snb_ivb=('butterfly' 'link' 'lumpy' 'parrot' 'stout' 'stumpy')
 apl=('astronaut' 'babymega' 'babytiger' 'blacktip' 'coral' 'electro' 'epaulette' \
     'lava' 'nasher'  'pyro' 'rabbid'  'reef'  'robo' 'sand' 'santa' 'snappy')
@@ -81,7 +82,7 @@ cml_books=('akemi' 'dragonair' 'drallion' 'dratini' 'hatch' 'helios' 'jinlon' 'k
 cml=($(printf "%s " "${cml_boxes[@]}" "${cml_books[@]}"))
 UEFI_ROMS=($(printf "%s " "${hsw_boxes[@]}" "${hsw_books[@]}" "${bdw_boxes[@]}" \
     "${bdw_books[@]}" "${baytrail[@]}" "${snb_ivb[@]}" "${braswell[@]}" \
-    "${skylake[@]}" "${kbl[@]}" "${purism[@]}" "${str[@]}"))
+    "${skylake[@]}" "${geminilake[@]}" "${kbl[@]}" "${purism[@]}" "${str[@]}"))
 shellballs=($(printf "%s " "${hsw_boxes[@]}" "${hsw_books[@]}" "${bdw_boxes[@]}" \
     "${bdw_books[@]}" "${baytrail[@]}" "${snb_ivb[@]}" "${braswell[@]}" \
     "${skylake[@]}" 'atlas' 'eve' 'nocturne' 'soraka' 'teemo' 'vayne' 'careena' 'liara'))
