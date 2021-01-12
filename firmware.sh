@@ -472,6 +472,12 @@ if [ $? -ne 0 ]; then
 fi
 
 #flash Full ROM firmware
+echo_red "LAST CHANCE TO OPT OUT...."
+echo_yellow "\nIf you still wish to continue, type: 'MAKE IT SO' and press enter
+(or just press enter to return to the main menu)"
+read -e
+[[ "$REPLY" = "MAKE IT SO" ]] || return
+
 exit_red "STOPPING FOR SANITY"; return 1
 
 #flash without verify, to avoid IFD mismatch upon verification 
