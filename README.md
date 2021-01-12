@@ -5,7 +5,7 @@ For full details, please visit https://mrchromebox.tech
 Within the crosh shell type:
 
 ```
-cd; curl -LO https://raw.githubusercontent.com/ThatsUseful/MrChromeboxScripts/master/firmware-util.sh && sudo bash firmware-util.sh
+cd /usr/local; sudo mkdir -p coreboot && cd coreboot; sudo curl -LO https://raw.githubusercontent.com/ThatsUseful/MrChromeboxScripts/master/firmware-util.sh && sudo bash firmware-util.sh
 ```
 
 Select the required actions.
