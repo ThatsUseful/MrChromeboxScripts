@@ -472,6 +472,7 @@ if [ $? -ne 0 ]; then
 fi
 
 #flash Full ROM firmware
+exit_red "STOPPING FOR SANITY"; return 1
 
 #flash without verify, to avoid IFD mismatch upon verification 
 echo_yellow "Installing Full ROM firmware (may take up to 90s)"

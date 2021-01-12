@@ -1,4 +1,4 @@
-Clone of the ChromeOS Firmware Utility script and Kodi E-Z Setup script adding support for GeminiLake Casta
+Clone of the ChromeOS Firmware Utility script and Kodi E-Z Setup script adding support for GeminiLake Casta [UEFI ONLY]
 
 For full details, please visit https://mrchromebox.tech
 
